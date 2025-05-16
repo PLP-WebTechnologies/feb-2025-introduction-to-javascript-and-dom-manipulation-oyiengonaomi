@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            transition: background-color 0.5s ease;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        .content-box {
+            border: 2px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            opacity: 0.9;
+        }
+        
+        #dynamic-text {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        
+        #new-element {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: none; /* Hidden by default */
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive JavaScript Demo</h1>
+        <p>Explore dynamic content and interactivity with JavaScript!</p>
+    </header>
+    
+    <main>
+        <section class="content-box">
+            <h2>Dynamic Text Content</h2>
+            <p id="dynamic-text">This text will change when you click the button below!</p>
+            <button id="change-text-btn">Change Text</button>
+        </section>
+        
+        <section class="content-box">
+            <h2>Style Manipulation</h2>
+            <button id="change-background-btn">Change Background Color</button>
+            <button id="change-font-btn">Change Font Size</button>
+        </section>
+        
+        <section class="content-box">
+            <h2>Element Management</h2>
+            <button id="toggle-element-btn">Show/Hide Element</button>
+            <div id="new-element">
+                <h3>Hidden Element Revealed!</h3>
+                <p>This element was hidden and has now been revealed by JavaScript.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Created with HTML and JavaScript - Happy Coding! 💻✨</p>
+    </footer>
+    
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
